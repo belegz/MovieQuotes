@@ -22,6 +22,11 @@ class MovieQuotesTableViewController: UITableViewController {
         movieQuotes.append(MovieQuote(quote: "Havo dad, Legolas", movie: "The Fellowship of The Ring"))
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     @objc func showAddQuoteDialog() {
         //        print("Add button!")
         // TODO: add a dialog CRUD

@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         // TODO: add the date
+//        let db = Firestore.firestore()
+//        let settings = db.settings
+//        settings.areTimestampsInSnapshotsEnabled = true
+//        db.settings = settings
         return true
     }
 

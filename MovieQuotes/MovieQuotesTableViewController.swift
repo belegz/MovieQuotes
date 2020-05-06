@@ -15,6 +15,7 @@ class MovieQuotesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = editButtonItem
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddQuoteDialog))
         movieQuotes.append(MovieQuote(quote: "I will be back", movie: "The Terminator"))
         movieQuotes.append(MovieQuote(quote: "Havo dad, Legolas", movie: "The Fellowship of The Ring"))
@@ -62,5 +63,13 @@ class MovieQuotesTableViewController: UITableViewController {
         cell.detailTextLabel?.text = movieQuotes[indexPath.row].movie
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+//            print("Delete")
+            movieQuotes.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
     }
 }

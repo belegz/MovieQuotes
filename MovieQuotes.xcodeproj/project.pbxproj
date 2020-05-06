@@ -13,6 +13,7 @@
 		342665A7245C74FC005B9AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342665A6245C74FC005B9AE9 /* Assets.xcassets */; };
 		342665AA245C74FC005B9AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 342665A8245C74FC005B9AE9 /* LaunchScreen.storyboard */; };
 		342665B524627296005B9AE9 /* MovieQuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342665B424627296005B9AE9 /* MovieQuotesTableViewController.swift */; };
+		342665B724627593005B9AE9 /* MovieQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342665B624627593005B9AE9 /* MovieQuote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		342665A9245C74FC005B9AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		342665AB245C74FC005B9AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		342665B424627296005B9AE9 /* MovieQuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuotesTableViewController.swift; sourceTree = "<group>"; };
+		342665B624627593005B9AE9 /* MovieQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				342665A8245C74FC005B9AE9 /* LaunchScreen.storyboard */,
 				342665AB245C74FC005B9AE9 /* Info.plist */,
 				342665B424627296005B9AE9 /* MovieQuotesTableViewController.swift */,
+				342665B624627593005B9AE9 /* MovieQuote.swift */,
 			);
 			path = MovieQuotes;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3426659C245C74FA005B9AE9 /* AppDelegate.swift in Sources */,
+				342665B724627593005B9AE9 /* MovieQuote.swift in Sources */,
 				342665B524627296005B9AE9 /* MovieQuotesTableViewController.swift in Sources */,
 				3426659E245C74FA005B9AE9 /* SceneDelegate.swift in Sources */,
 			);
